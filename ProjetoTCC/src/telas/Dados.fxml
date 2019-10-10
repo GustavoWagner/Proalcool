@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" onKeyPressed="#atualizarLista" prefHeight="583.0" prefWidth="879.0" style="-fx-background-color: #171f2a;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="telas.DadosController">
+   <children>
+      <AnchorPane layoutX="14.0" prefHeight="66.0" prefWidth="343.0" style="-fx-background-color: #171f2b;">
+         <children>
+            <Label layoutX="106.0" layoutY="32.0" prefHeight="32.0" prefWidth="236.0" text="Proálcool: 1982 a 1991" textFill="#2ad74f">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="39.0" fitWidth="36.0" layoutX="47.0" layoutY="30.0" onMouseClicked="#atualizarLista" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/iconBD.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Line endX="694.0" layoutX="140.0" layoutY="86.0" startX="-96.0" stroke="#2ad74f" />
+      <TableView fx:id="tbv" layoutX="42.0" layoutY="98.0" prefHeight="380.0" prefWidth="795.0" style="-fx-background-color: #171f2a; -fx-opacity: 0.7;" stylesheets="@newTableView.css">
+        <columns>
+          <TableColumn fx:id="ano1" prefWidth="91.0" text="Ano" />
+            <TableColumn fx:id="prod1" prefWidth="140.0" text="Prod. Cana" />
+            <TableColumn fx:id="prod2" prefWidth="140.0" text="Prod. Açúcar" />
+            <TableColumn fx:id="prod3" prefWidth="140.0" text="Prod. Álcool" />
+            <TableColumn fx:id="venda1" prefWidth="140.0" text="Carro a álcool" />
+            <TableColumn fx:id="venda2" prefWidth="140.0" text="Carro a gasolina" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </TableView>
+      <ImageView fx:id="sair" fitHeight="32.0" fitWidth="32.0" layoutX="833.0" layoutY="14.0" onMousePressed="#mouseButtonAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/iconFechar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="voltar" fitHeight="32.0" fitWidth="32.0" layoutX="801.0" layoutY="14.0" onMousePressed="#voltarAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/iconVoltar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <JFXButton fx:id="prox" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="377.0" layoutY="502.0" onAction="#proxAction" prefHeight="47.0" prefWidth="126.0" style="-fx-background-color: #273345;" text="Gráfico" textFill="#2ad74f">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fx:id="info" fitHeight="32.0" fitWidth="32.0" layoutX="769.0" layoutY="14.0" onMousePressed="#informa" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/iconInformaçao.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

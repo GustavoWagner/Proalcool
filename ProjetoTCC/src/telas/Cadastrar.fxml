@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="437.0" style="-fx-background-color: #171f2b;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="telas.CadastrarController">
+   <children>
+      <JFXTextField fx:id="prodAçucar" layoutX="134.0" layoutY="231.0" promptText="Produção de Açúcar" stylesheets="@newTextField.css">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="prodCana" layoutX="135.0" layoutY="184.0" promptText="Produção de Cana" stylesheets="@newTextField.css">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="prodAlcool" layoutX="135.0" layoutY="278.0" promptText="Produção de Álcool" stylesheets="@newTextField.css">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="vendaGasolina" layoutX="134.0" layoutY="373.0" promptText="Carro a Gasolina" stylesheets="@newTextField.css">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="vendaAlcool" layoutX="135.0" layoutY="326.0" promptText="Carro a Álcool" stylesheets="@newTextField.css">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="ano" layoutX="134.0" layoutY="136.0" promptText="Ano" stylesheets="@newTextField.css">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="adDados" buttonType="RAISED" layoutX="134.0" layoutY="439.0" onAction="#adicionarDados" prefHeight="45.0" prefWidth="193.0" style="-fx-background-color: #273346;" text="Adicionar dados" textFill="#2ad74f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="rmvDados" buttonType="RAISED" layoutX="134.0" layoutY="497.0" onAction="#removerDados" prefHeight="45.0" prefWidth="193.0" style="-fx-background-color: #273346;" text="Remover dados" textFill="#ff0606">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Line endX="124.0" layoutX="226.0" layoutY="121.0" startX="-113.0" stroke="#2ad74f" />
+      <ImageView fx:id="info" fitHeight="32.0" fitWidth="32.0" layoutX="334.0" layoutY="9.0" onMousePressed="#informa" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/iconInformaçao.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="voltar" fitHeight="32.0" fitWidth="32.0" layoutX="366.0" layoutY="9.0" onMousePressed="#voltarAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/iconVoltar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="sair" fitHeight="32.0" fitWidth="32.0" layoutX="397.0" layoutY="9.0" onMousePressed="#mouseButtonAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/iconFechar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="200.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/iconBDMais.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

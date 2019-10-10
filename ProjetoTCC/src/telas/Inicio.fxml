@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="431.0" prefWidth="379.0" style="-fx-background-color: #171f2b;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="telas.InicioController">
+    <children>
+      <ImageView fitHeight="477.0" fitWidth="419.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" smooth="false" />
+        <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" layoutX="136.0" layoutY="136.0" minHeight="16" minWidth="69" prefHeight="45.0" prefWidth="151.0" text="Proálcool" textAlignment="CENTER" textFill="#2ad74f">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font></Label>
+      <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="269.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/iconGasolina.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="89.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/iconCarro.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="178.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/iconPetroleo.png" />
+         </image>
+      </ImageView>
+      <Line endX="100.0" layoutX="211.0" layoutY="116.0" startX="-100.0" stroke="#2ad74f" />
+      <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="180.0" layoutY="27.0" onMouseClicked="#informarAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/iconCana.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="373.0" layoutY="14.0" onMouseClicked="#mouseButtonAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/iconFechar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <JFXButton fx:id="vDados" alignment="CENTER" buttonType="RAISED" layoutX="117.0" layoutY="327.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="185.0" ripplerFill="#21d044" style="-fx-background-color: #273345;" text="Visualizar dados" textAlignment="CENTER" textFill="#2ad74f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="fLogin" alignment="CENTER" buttonType="RAISED" layoutX="117.0" layoutY="390.0" onAction="#Login" prefHeight="45.0" prefWidth="185.0" ripplerFill="#21d044" style="-fx-background-color: #273345;" text="Adicionar dados" textAlignment="CENTER" textFill="#2ad74f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+    </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" onMousePressed="#atualizarAction" prefHeight="612.0" prefWidth="889.0" style="-fx-background-color: #171f2a;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="telas.TextController">
+   <children>
+      <LineChart fx:id="LineChart" alternativeColumnFillVisible="true" animated="false" layoutY="26.0" prefHeight="551.0" prefWidth="889.0" stylesheets="@newLineChart.css" title="O embate entre o álcool e a gasolina">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <ImageView fx:id="sair" fitHeight="32.0" fitWidth="32.0" layoutX="847.0" layoutY="10.0" onMousePressed="#mouseButtonAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/iconFechar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="voltar" fitHeight="32.0" fitWidth="32.0" layoutX="815.0" layoutY="10.0" onMousePressed="#voltarAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/iconVoltar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="info" fitHeight="32.0" fitWidth="32.0" layoutX="783.0" layoutY="10.0" onMousePressed="#informa" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/iconInformaçao.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="analise" fitHeight="32.0" fitWidth="32.0" layoutX="843.0" layoutY="566.0" onMouseReleased="#proxAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/iconProximo.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="680.0" layoutY="572.0" text="Análise macroeconômica" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

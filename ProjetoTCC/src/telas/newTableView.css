@@ -1,0 +1,81 @@
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:  #243142; 
+}
+.table-view .column-header .label{
+   -fx-text-fill: white;
+   -fx-font-weight: bold; 
+   -fx-alignment: CENTER;
+}
+
+.table-view .cell {
+  -fx-cell-size: 35;
+  -fx-alignment: center;
+  -fx-background-color:  #171f2a;
+  -fx-border-color:  #171f2a;
+  -fx-text-fill: #6b81c7;
+  -fx-alignment: CENTER;
+  -fx-font-size: 15px;
+}
+
+.table-view .cell:odd {
+  -fx-cell-size: 35;
+  -fx-alignment: center;
+  -fx-background-color: #1b2531;
+  -fx-border-color: #1b2531;
+  -fx-text-fill: #6b81c7;
+  -fx-alignment: CENTER;
+  -fx-font-size: 15px;
+}
+
+.table-row-cell:selected {
+   -fx-opacity: 0.8;
+   -fx-background-insets: 0;
+   -fx-background-radius: 1;
+   -fx-background-color: darkgreen; 
+   -fx-text-background-color:  #584762;
+}
+
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    
+	-fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar *track* CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-border-color:derive( #6622CC,80%);
+
+	-fx-background-radius: 2em;
+	-fx-border-radius:2em;
+}
+
+/* The main scrollbar *thumb* CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #6622CC,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}
+
+/* chart properties */
+
+.chart {
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+    -fx-legend-visible: false;
+}
+.chart-plot-background {
+    -fx-background-color:transparent;
+}
+
+.chart-pie {
+    -fx-border-color: derive(-fx-pie-color, 1%);
+    -fx-border-width: 0px;
+}

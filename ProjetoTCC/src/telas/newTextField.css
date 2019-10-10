@@ -1,0 +1,31 @@
+.jfx-text-field
+{
+    -jfx-focus-color: #273346;
+}
+
+.jfx-password-field
+{
+     -jfx-focus-color: #273346;
+}
+
+.text-field
+{
+    -fx-prompt-text-fill: #273346;
+    -fx-text-fill: white;
+}
+
+.password-field
+{
+    -fx-prompt-text-fill: #273346;
+    -fx-text-fill: white;
+}
+
+.text-field .input-line
+{
+    -fx-background-color: #273346;
+}
+
+.password-field .input-line
+{
+    -fx-background-color: #273346;
+}
